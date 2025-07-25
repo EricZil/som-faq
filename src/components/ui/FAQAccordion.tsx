@@ -1,9 +1,10 @@
 'use client';
 
-import { ChevronDownIcon, ChevronUpIcon, LinkIcon, ClipboardIcon, CheckIcon } from '@heroicons/react/24/outline';
+import { ChevronDownIcon, LinkIcon, ClipboardIcon, CheckIcon } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface StaffProfile {
   name: string;
@@ -170,9 +171,11 @@ export default function FAQAccordion({ item, isOpen, onToggle, index, selectedCa
                       className="flex items-center gap-3 mb-4 p-3 bg-gradient-to-r from-[#E7CFB5]/30 to-[#C7A077]/20 rounded-lg border border-[#C7A077]/30"
                     >
                       <div className="relative">
-                        <img 
+                        <Image 
                           src={item.staff.imageUrl} 
                           alt={item.staff.name}
+                          width={40}
+                          height={40}
                           className="w-10 h-10 rounded-full border-2 border-[#C7A077]/50 shadow-md"
                         />
                         <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-sm"></div>

@@ -1,8 +1,9 @@
 'use client';
-import { QuestionMarkCircleIcon, ChatBubbleLeftRightIcon, CheckBadgeIcon, CheckCircleIcon, ClockIcon, UserGroupIcon, SparklesIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
+import { CheckBadgeIcon, CheckCircleIcon, ClockIcon, UserGroupIcon, RocketLaunchIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 import PageBackground from '@/components/layout/PageBackground';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import faqData from '../../data/faqs.json';
 import configData from '../../data/config.json';
 
@@ -59,7 +60,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <div className="w-12 h-12 bg-gradient-to-br from-[#E7CFB5] to-[#C7A077] rounded-xl flex items-center justify-center shadow-lg">
-                <img src="/logo.svg" alt="Hack Club Logo" width="28" height="28" className="object-contain" />
+                <Image src="/logo.svg" alt="Hack Club Logo" width={28} height={28} className="object-contain" />
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-[#E7CFB5] font-[family-name:var(--font-dynapuff)]">SoM FAQ</h1>
@@ -217,7 +218,7 @@ export default function Home() {
                 className="w-16 h-16 bg-gradient-to-br from-[#592F31] to-[#4a2d24] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300"
                 whileHover={{ rotate: 5 }}
               >
-                <img src="/logo.svg" alt="Hack Club Logo" width="32" height="32" className="object-contain" />
+                <Image src="/logo.svg" alt="Hack Club Logo" width={32} height={32} className="object-contain" />
               </motion.div>
               <h3 className="text-2xl font-bold text-[#592F31] mb-4 group-hover:text-[#4a2d24] transition-colors font-[family-name:var(--font-dynapuff)]">Comprehensive FAQ</h3>
               <p className="text-[#592F31]/80 leading-relaxed" style={{fontFamily: 'Phantom Sans, sans-serif', fontWeight: 'bold'}}>
@@ -337,7 +338,7 @@ export default function Home() {
             <motion.div variants={itemVariants} className="mb-8">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-gradient-to-br from-[#E7CFB5] to-[#C7A077] rounded-xl flex items-center justify-center">
-                  <img src="/logo.svg" alt="Hack Club Logo" width="28" height="28" className="object-contain" />
+                  <Image src="/logo.svg" alt="Hack Club Logo" width={28} height={28} className="object-contain" />
                 </div>
                 <h3 className="text-2xl font-bold text-[#E7CFB5] font-[family-name:var(--font-dynapuff)]">SoM FAQ Hub</h3>
               </div>

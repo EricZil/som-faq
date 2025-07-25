@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 interface HeaderProps {
   title: string;
@@ -33,7 +34,7 @@ export default function Header({ title, showBackButton = false }: HeaderProps) {
               className="relative"
             >
               <div className="w-12 h-12 bg-gradient-to-br from-[#E7CFB5] to-[#C7A077] rounded-xl flex items-center justify-center shadow-lg">
-                <img src="/logo.svg" alt="Hack Club Logo" width="28" height="28" className="object-contain" />
+                <Image src="/logo.svg" alt="Hack Club Logo" width={28} height={28} className="object-contain" />
               </div>
               <div className="absolute -top-1 -right-1 w-4 h-4 bg-[#4a2d24] rounded-full animate-pulse"></div>
             </motion.div>

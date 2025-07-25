@@ -9,9 +9,8 @@ interface SearchBarProps {
   placeholder?: string;
 }
 
-export default function SearchBar({ onSearch, placeholder = "Search FAQs..." }: SearchBarProps) {
+export default function SearchBar({ onSearch }: SearchBarProps) {
   const [query, setQuery] = useState('');
-  const [isFocused, setIsFocused] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
@@ -40,8 +39,6 @@ export default function SearchBar({ onSearch, placeholder = "Search FAQs..." }: 
             placeholder="Search through our frequently asked questions..."
             value={query}
             onChange={handleInputChange}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
             className="w-full pl-16 pr-16 py-6 bg-transparent border-none rounded-2xl focus:outline-none text-lg text-[#4a2d24] placeholder-[#4a2d24]/50 focus:placeholder-[#4a2d24]/30 transition-all duration-200"
             style={{ fontFamily: 'Phantom Sans, sans-serif' }}
           />
@@ -76,7 +73,7 @@ export default function SearchBar({ onSearch, placeholder = "Search FAQs..." }: 
             className="mt-4 text-center"
           >
             <p className="text-sm text-[#4a2d24]/70" style={{fontFamily: 'Phantom Sans, sans-serif'}}>
-              🔍 Searching for: <span className="font-semibold text-[#4a2d24]">"{query}"</span>
+              🔍 Searching for: <span className="font-semibold text-[#4a2d24]">&ldquo;{query}&rdquo;</span>
             </p>
           </motion.div>
         )}

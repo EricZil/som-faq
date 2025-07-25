@@ -12,12 +12,6 @@ import configData from '../../../data/config.json';
 import staffData from '../../../data/staff.json';
 import faqsData from '../../../data/faqs.json';
 
-interface StaffProfile {
-  name: string;
-  imageUrl: string;
-  role: string;
-}
-
 interface FAQItem {
   question: string;
   answer: string;
@@ -42,9 +36,6 @@ const parseSlackUrl = (url: string) => {
     const urlObj = new URL(url);
     const pathParts = urlObj.pathname.split('/');
     const channelId = pathParts[2]; // archives/CHANNEL_ID/...
-    const searchParams = new URLSearchParams(urlObj.search);
-    const threadTs = searchParams.get('thread_ts');
-    const cid = searchParams.get('cid');
     
     // Extract timestamp from the URL path (p1753377199249849)
     const timestampMatch = pathParts[3]?.match(/p(\d+)/);
@@ -54,7 +45,7 @@ const parseSlackUrl = (url: string) => {
       channel: `#${channelId}`, // You might want to map this to actual channel names
       timestamp: timestamp
     };
-  } catch (error) {
+  } catch {
     return {
       channel: '#unknown',
       timestamp: ''
@@ -62,8 +53,25 @@ const parseSlackUrl = (url: string) => {
   }
 };
 
+// Define types for the imported data
+interface RawFAQ {
+  question: string;
+  answer: string;
+  category: string;
+  reference?: string;
+  staff?: string;
+}
+
+interface StaffData {
+  staff: Record<string, {
+    name: string;
+    imageUrl: string;
+    role: string;
+  }>;
+}
+
 // Transform the imported data to match our component's expected format
-const transformedFAQs: FAQItem[] = faqsData.faqs.map((faq: any) => {
+const transformedFAQs: FAQItem[] = (faqsData.faqs as RawFAQ[]).map((faq) => {
   let reference = null;
   if (faq.reference) {
     const parsedUrl = parseSlackUrl(faq.reference);
@@ -76,15 +84,16 @@ const transformedFAQs: FAQItem[] = faqsData.faqs.map((faq: any) => {
     };
   }
 
+  const typedStaffData = staffData as StaffData;
   return {
     question: faq.question,
     answer: faq.answer,
     category: faq.category,
     reference,
-    staff: faq.staff && staffData.staff && (staffData.staff as any)[faq.staff] ? {
-      name: (staffData.staff as any)[faq.staff].name,
-      imageUrl: (staffData.staff as any)[faq.staff].imageUrl,
-      role: (staffData.staff as any)[faq.staff].role
+    staff: faq.staff && typedStaffData.staff && typedStaffData.staff[faq.staff] ? {
+      name: typedStaffData.staff[faq.staff].name,
+      imageUrl: typedStaffData.staff[faq.staff].imageUrl,
+      role: typedStaffData.staff[faq.staff].role
     } : undefined
   };
 });
