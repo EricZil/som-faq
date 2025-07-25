@@ -1,0 +1,172 @@
+{
+  "faqs": [
+    {
+      "question": "Who can participate?",
+      "answer": "Anyone 18 years or under - this includes 18-year-olds too!",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Why should I trust Hack Club?",
+      "answer": "Hack Club is/has partnered with organizations leading technology and STEM. Some of these include SpaceX, MIT (The university), Girls Who Code (GWC), and GitHub (a company owned by Microsoft), and Framework Computer.\n\nHack Club is [a registered U.S. 501(c)(3) nonprofit](https://the.hackfoundation.org/) and we are [financially transparent](https://hcb.hackclub.com/hq/transactions)- meaning you can see what we spend our money on!\n\nHack Club and all its software have been built over the years by teenagers, including this event! Today's supporters include Elon Musk, Vitalik Buterin, Google.org, among many others and hundreds of individual supporters.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Why do I have to verify?",
+      "answer": "Unfortunately, when we give away lots of expensive stuff, there's a lot of adults trying to claim it. We need to verify you are who you say you are, so that we know we're giving stuff to the right people!",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "I verified before, do I still have to re-verify?",
+      "answer": "Hack Club is using a new, more secure identity verification system. Because of this, you will need to re-verify, even if you have verified for a previous event. If you were previously verified L2, you'll still need to re-verify but the L2 will carry over after that's done.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "How do I verify?",
+      "answer": "Go to campfire and click the button at the bottom to order stickers. If all goes well, you should get a guide by our wonderful raccoon assistant Heidi to order stickers, in the process verifying your identity.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "What form of ID is accepted?",
+      "answer": "Depends where you are!\n\n• If you're in India, you'll need to use your Aadhar.\n• Elsewhere around the world, we accept government-issued IDs and, in some countries, student IDs with a transcript/report card.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "What if my verification got rejected?",
+      "answer": "If your verification gets rejected, you'll get an email asking you to re-submit.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Aadhaar? How do I get the right version?",
+      "answer": "To get a valid Aadhaar for submission to Identity, it must be downloaded directly from UIDAI as an unmasked PDF. Do not edit or alter the PDF, or remove any passwords.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "I have questions! Where do I go for help?",
+      "answer": "The aptly-named [#identity-help](https://slack.com/archives/C092833JXKK) channel!!\n\nCan't see the channel? Send a message in this channel and someone will add you to it.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "I got an email that said I'm verified, yet I can't do XYZ",
+      "answer": "Try opening [summer.hackclub.com](http://summer.hackclub.com/) first! This should check if you need to be upgraded!",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "How do I login to the Campfire when I'm not verified yet?",
+      "answer": "Use the button [@Summer of Making](https://hackclub.slack.com/team/U08VCSRL742) sent you to login while awaiting verification.",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "How do I manually link my Summer of Making and Identity accounts?",
+      "answer": "If your identity has been verified, but the website thinks you're unverified, do the following:\n\n1. Navigate to the free stickers, and click acquire again.\n2. When you are brought to [identity.hackclub.com](https://identity.hackclub.com/), navigate past the initial page if you are not logged in, and click on the \"Sign In\" link at the top of the page.\n3. Enter the email you used to verify, and then click the magic link in your email.\n4. You should then be asked to link your identity to Summer of Making, click OK - or whatever sounds like it would work!\n5. Hopefully, that's it! Afterwards, you should get invited to order some stickers!",
+      "category": "verification",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "How often do I need to commit?",
+      "answer": "There's no specific timeline, but after every feature is good practice! Frequent commits make it easier to verify your work!",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Can I make hardware projects?",
+      "answer": "You can make anything that you can track with Hackatime! KiCad and EasyEDA both have extensions for you to use.\n\n> You can get a grant for your hardware by joining [#highway](https://slack.com/archives/C08Q1H6D79B)! (Can't see the channel? Wait for your ID to be verified)\nNote you cannot submit a project for both Highway and Summer of Making",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Can I work on old projects?",
+      "answer": "Yes! But only time starting from June 16th will be counted!",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Can I work on team projects?",
+      "answer": "Yes! Please make sure that your repository and play links are the same for each person submitting to Summer of Making though. You also cannot use Liveshare or similar, you need to have your own commits.",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "The time on Summer of Making is lower then on my IDE/Hackatime!",
+      "answer": "The data takes some time (pun intended) to sync up! As long as your time is shown on [hackatime.hackclub.com](http://hackatime.hackclub.com/) and on your IDE, you're all good.",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Can I submit a project that's for a YSWS?",
+      "answer": "Yes unless otherwise specified!\nYou CANNOT count your time for the following events:\n\n* [#highway](https://slack.com/archives/C08Q1H6D79B)\n* [#neighborhood](https://slack.com/archives/C073L9LB4K1)\n* [#shipwrecked](https://slack.com/archives/C08N0R86DMJ)\n\nDisclaimer:\nJust a warning: you're not able to double count your project for [#neighborhood](https://slack.com/archives/C073L9LB4K1) and [#summer-of-making](https://hackclub.slack.com/archives/C015M4L9AHW).\nPlease don't enter your hackatime project into #summer-of-making and submit that as it will then be ineligible for Neighborhood.\nIf you accidentally add your hackatime project, contact the organizers of #summer-of-making to remove the hackatime project or remove within interface. I encourage you to stick with Neighborhood & make this crazy adventure happen for yourself.\nI'm on a mission this week & the following week to find more housing for y'all for when you come, so I ask you stick with it. By end of week, all the current houses will be full of your neighbors who found a way to make it here.\nBeginners are many, enders are few. Be one of the few who put in the effort, the heart, the blood, the sweat, the tears, and travel to this neighborhood community we're building this Summer in San Francisco :)\ncya soon!\n~Thomas",
+      "category": "projects",
+      "staff": null,
+      "reference": "https://hackclub.slack.com/archives/C073L9LB4K1/p1750130010366259"
+    },
+    {
+      "question": "What's a devlog?",
+      "answer": "Think of it as being like a journal entry for your project! What did you work on? What still needs to be done? What works and doesn't work still?",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "When do I need to do a devlog?",
+      "answer": "For every 10 hours of work you put in you need 1 devlog. If you do less than that it's fine to not do a devlog (although doing one doesn't hurt).\n\nHaving a timeline of work helps us verify your project as being real and not fraudulent, plus it also allows you to reflect and see what you can do better in the future!",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "How long will it be until my project is verified?",
+      "answer": "TLDR: As long as it takes.\nWe do manual review of all projects to help ensure fraud doesn't occur, so it may take a while for your project to be verified, especially if you submit on the weekend or on Fridays as our staff mostly work Mon-Fri. In the meantime, there is nothing stopping you from starting a new project!",
+      "category": "projects",
+      "staff": null,
+      "reference": null
+    },
+    {
+      "question": "Does the second ship goes through review process again?",
+      "answer": "If the first ship was approved, then no!",
+      "category": "shipping",
+      "staff": "irtaza",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753377199249849?thread_ts=1753375299.757009&cid=C090JKDJYN8"
+    },
+    {
+      "question": "What's the difference between certification and shipping?",
+      "answer": "Shipping means you have finished your project (or V1 of it) and have submitted it for manual review by the team. After a few weeks (less than that if you vote a lot!), it gets certified.\nAfter certification it is voted on by the community. This can take from a few days to even a week (but generally a few days only). Then you get shells based on the hours you did and the votes you got!\n\nOpen your project. There it should say \"ship certified\" in green when your project has been reviewed. Otherwise, it says \"awaiting ship certification\"\nThere might be a bug where it says something else in another page, but what it says on the specific project's page should be final!",
+      "category": "shipping",
+      "staff": "shr",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753381691708399?thread_ts=1753372191.233309&cid=C090JKDJYN8"
+    },
+    {
+      "question": "How to create a devlog?",
+      "answer": "You can create from the website, in your project page!",
+      "category": "projects",
+      "staff": "monosodiumfox",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753363260146379?thread_ts=1753363239.192259&cid=C090JKDJYN8"
+    }
+  ]
+}

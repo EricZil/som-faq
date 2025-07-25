@@ -1,0 +1,39 @@
+{
+  "staff": {
+    "irtaza": {
+      "id": "irtaza",
+      "name": "@Irtaza",
+      "role": "SoM Reviewer + Support",
+      "imageUrl": "https://ca.slack-edge.com/T0266FRGM-U079EQY9X1D-b06f6a3e27be-512",
+      "slackId": "U079EQY9X1D"
+    },
+    "amber": {
+      "id": "amber",
+      "name": "@Amber",
+      "role": "SoM Support Lead",
+      "imageUrl": "https://ca.slack-edge.com/T0266FRGM-U054VC2KM9P-8149f482438d-512",
+      "slackId": "U054VC2KM9P"
+    },
+    "monosodiumfox": {
+      "id": "monosodiumfox",
+      "name": "@monosodiumfox",
+      "role": "SoM Helper",
+      "imageUrl": "https://ca.slack-edge.com/T0266FRGM-U08UWCB8JJY-968e18111f78-512",
+      "slackId": "U08UWCB8JJY"
+    },
+    "cskartikey": {
+      "id": "cskartikey",
+      "name": "@cskartikey",
+      "role": "Engineering @ HQ",
+      "imageUrl": "https://ca.slack-edge.com/T0266FRGM-U05F4B48GBF-e99ba98a3d7b-512",
+      "slackId": "U05F4B48GBF"
+    },
+    "shr": {
+      "id": "shr",
+      "name": "@shr",
+      "role": "SoM Support",
+      "imageUrl": "https://ca.slack-edge.com/T0266FRGM-U078F3Q2007-gaf3bb88d313-512",
+      "slackId": "U078F3Q2007"
+    }
+  }
+}

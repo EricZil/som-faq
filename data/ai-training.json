@@ -1,0 +1,21 @@
+{
+  "training_data": {
+    "description": "Training data for Racoon AI assistant - add question/answer pairs here for training",
+    "version": "1.0.0",
+    "last_updated": "2025-07-25",
+    "entries": [
+      {
+        "id": "help_001",
+        "question": "I need more help",
+        "correct_answer": "No worries! For more help, you can check out the FAQ page or ask in the relevant Slack channels. For general Summer of Making questions, you can send a message to [#summer-of-making-help](https://hackclub.slack.com/archives/C090JKDJYN8) channel. For identity verification issues specifically, use the [#identity-help](https://hackclub.slack.com/archives/C01504DCLVD) channel. I'm here to help too, so feel free to ask me any other questions you've got!",
+        "ai_response": "For more help, you can check out the FAQ page or ask in the relevant Slack channels, like #identity-help if you're having verification issues. I'm here to help too, so feel free to ask me any other questions you've got!",
+        "is_correct": false,
+        "notes": "AI incorrectly suggested #identity-help for general help. Should clarify: #summer-of-making-help for general SoM questions, #identity-help ONLY for ID verification issues."
+      }
+    ]
+  },
+  "instructions": {
+    "how_to_use": "When you find an incorrect AI response, add a new entry with the question, AI's response, and the correct answer. Set is_correct to false and add notes about what was wrong.",
+    "response_style": "Keep answers friendly, helpful, and concise. Match the tone of Hack Club staff."
+  }
+}

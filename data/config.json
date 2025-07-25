@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "Summer of Making FAQ",
+    "description": "Frequently Asked Questions for Hack Club's Summer of Making program",
+    "lastUpdated": "2025-07-25",
+    "version": "1.0"
+  },
+  "categories": [
+    {
+      "id": "general",
+      "name": "General",
+      "description": "General questions about Summer of Making",
+      "icon": "❓"
+    },
+    {
+      "id": "shipping",
+      "name": "Shipping & Approval",
+      "description": "Questions about ship approval process and timelines",
+      "icon": "🚢"
+    },
+    {
+      "id": "orders",
+      "name": "Orders",
+      "description": "Questions about ordering from the shop",
+      "icon": "📦"
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "description": "Questions about projects ideas and development",
+      "icon": "🛠️"
+    },
+    {
+      "id": "verification",
+      "name": "Verification",
+      "description": "Questions about verification and requirements",
+      "icon": "✅"
+    },
+    {
+      "id": "other",
+      "name": "Other",
+      "description": "Other questions not covered in specific categories",
+      "icon": "💬"
+    }
+  ],
+  "supportLinks": {
+    "contactSupport": "https://hackclub.slack.com/archives/C090JKDJYN8",
+    "joinCommunity": "https://hackclub.slack.com/archives/C090JKDJYN8",
+    "documentation": "https://hackclub.com/som",
+    "guidelines": "https://hackclub.com/som/guidelines"
+  }
+}
