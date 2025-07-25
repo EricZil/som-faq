@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import Header from '@/components/layout/Header';
@@ -98,7 +98,7 @@ const transformedFAQs: FAQItem[] = (faqsData.faqs as RawFAQ[]).map((faq) => {
   };
 });
 
-export default function FAQPage() {
+function FAQPageContent() {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -307,5 +307,25 @@ export default function FAQPage() {
           <ContactSupport />
         </main>
     </PageBackground>
+  );
+}
+
+export default function FAQPage() {
+  return (
+    <Suspense fallback={
+      <PageBackground>
+        <Header title="SoM FAQ" showBackButton={true} />
+        <main className="max-w-5xl mx-auto px-8 py-12">
+          <div className="text-center py-20">
+            <div className="text-6xl mb-4">⏳</div>
+            <p className="text-xl text-[#4a2d24]/70" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
+              Loading FAQ content...
+            </p>
+          </div>
+        </main>
+      </PageBackground>
+    }>
+      <FAQPageContent />
+    </Suspense>
   );
 }
