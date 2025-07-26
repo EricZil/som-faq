@@ -174,6 +174,13 @@
       "category": "general",
       "staff": "shr",
       "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753202750858549?thread_ts=1753202671.536769&cid=C090JKDJYN8"
+    },
+    {
+      "question": "How are shells calculated?",
+      "answer": "[Answer improved] Shell calculation works in two phases:\n\n**Base Rate (Guaranteed):**\n• You get 1 shell per hour worked - this is guaranteed if your project is accepted, even if no one votes for you\n\n**Community Voting Multiplier:**\n• After certification, your project goes to community voting\n• You can earn up to 30 shells per hour by getting the maximum votes\n• The final amount depends on how many community members vote for your project\n\n**Example:** For a 10-hour project, you can expect to earn between 10 shells (base rate) and 300 shells (maximum with all votes). Most projects fall somewhere in between based on community reception.\n\n**Technical Formula:**\nThe exact multiplier calculation uses this formula:\n```\nn + (((2.0*x-1.0) * Math.sqrt(2.0 * (1.0 - ((2.0*x-1.0)**2.0 / 2.0))) + 1.0) / 2.0) ** Math.log((a-n) / (m-n), t) * (m-n)\n```\nWhere the variables represent different aspects of the voting distribution and project parameters. The key takeaway: more community votes = more shells!",
+      "category": "general",
+      "staff": "shr",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1751991736137599?thread_ts=1751983517.878539&cid=C090JKDJYN8"
     }
   ]
 }
