@@ -188,6 +188,13 @@
       "category": "projects",
       "staff": "irtaza",
       "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753525696985829?thread_ts=1753525616.575839&cid=C090JKDJYN8"
+    },
+    {
+      "question": "Help, I've been banned!",
+      "answer": "Email [echo@hackclub.com](mailto:echo@hackclub.com) and follow the instructions given to you. We are not handling this elsewhere.",
+      "category": "other",
+      "staff": null,
+      "reference": "https://hackclub.slack.com/docs/T0266FRGM/F090MQF0H2Q?focus_section_id=temp:C:WfT014681eb73d645d0b8ae5230b"
     }
   ]
 }
