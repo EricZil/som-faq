@@ -202,6 +202,13 @@
       "category": "shipping",
       "staff": "irtaza",
       "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753540253906699?thread_ts=1753539000.736929&cid=C090JKDJYN8"
+    },
+    {
+      "question": "Where do I track my order (free stickers)",
+      "answer": "Unfortunately, you cannot track first class letters, due to USPS",
+      "category": "orders",
+      "staff": "monosodiumfox",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753540253906699?thread_ts=1753539000.736929&cid=C090JKDJYN8"
     }
   ]
 }
