@@ -26,6 +26,21 @@ const phantomSans = {
 export const metadata: Metadata = {
   title: "SoM FAQ Hub - Summer of Making Support",
   description: "Your one-stop destination for all Summer of Making questions and answers, curated and verified by the SoM support team.",
+  openGraph: {
+    title: "SoM FAQ Hub - Summer of Making Support",
+    description: "Your one-stop destination for all Summer of Making questions and answers, curated and verified by the SoM support team.",
+    type: "website",
+    url: "https://som-faq.vercel.app",
+    siteName: "SoM FAQ Hub",
+    images: [
+      {
+          url: "https://som-faq.vercel.app/banner.png",
+          width: 1200,
+          height: 630,
+          alt: "SoM FAQ Hub - Summer of Making Support",
+        },
+    ],
+  }
 };
 
 export default function RootLayout({

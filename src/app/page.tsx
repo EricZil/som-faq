@@ -8,18 +8,16 @@ import faqData from '../../data/faqs.json';
 import configData from '../../data/config.json';
 
 export default function Home() {
-  const [stats, setStats] = useState({
-    totalFAQs: 0,
-    categories: 0,
-    verifiedAnswers: 0
-  });
+  const [isClient, setIsClient] = useState(false);
+  
+  const stats = {
+    totalFAQs: faqData.faqs.length,
+    categories: configData.categories.length,
+    verifiedAnswers: faqData.faqs.length
+  };
 
   useEffect(() => {
-    setStats({
-      totalFAQs: faqData.faqs.length,
-      categories: configData.categories.length,
-      verifiedAnswers: faqData.faqs.length // All answers are staff-verified
-    });
+    setIsClient(true);
   }, []);
 
   const containerVariants = {
@@ -155,13 +153,14 @@ export default function Home() {
             <motion.div 
               variants={itemVariants}
               className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto"
+              suppressHydrationWarning={true}
             >
               <motion.div 
                 className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-[#4a2d24]/10 shadow-lg"
                 whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="text-3xl font-bold text-[#4a2d24] mb-2">{stats.totalFAQs}</div>
+                <div className="text-3xl font-bold text-[#4a2d24] mb-2" suppressHydrationWarning={true}>{stats.totalFAQs}</div>
                 <div className="text-[#4a2d24]/70 font-medium">Total FAQs</div>
               </motion.div>
               
@@ -170,7 +169,7 @@ export default function Home() {
                 whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <div className="text-3xl font-bold text-[#4a2d24] mb-2">{stats.categories}</div>
+                <div className="text-3xl font-bold text-[#4a2d24] mb-2" suppressHydrationWarning={true}>{stats.categories}</div>
                 <div className="text-[#4a2d24]/70 font-medium">Categories</div>
               </motion.div>
             </motion.div>

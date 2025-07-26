@@ -102,10 +102,17 @@ function FAQPageContent() {
   const [openItems, setOpenItems] = useState<number[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [isClient, setIsClient] = useState(false);
   const searchParams = useSearchParams();
+  
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
   
   // Handle direct FAQ links
   useEffect(() => {
+    if (!isClient) return;
+    
     const faqQuery = searchParams.get('q');
     if (faqQuery) {
       // Find the FAQ index that matches the query
@@ -126,7 +133,7 @@ function FAQPageContent() {
         }, 100);
       }
     }
-  }, [searchParams]);
+  }, [searchParams, isClient]);
 
   const toggleItem = (index: number) => {
     setOpenItems(prev => 
