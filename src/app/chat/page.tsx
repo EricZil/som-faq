@@ -265,7 +265,7 @@ Here's the current FAQ knowledge base:
                         <p className={`text-xs mt-2 opacity-70 ${
                           message.role === 'user' ? 'text-white/70' : 'text-[#4a2d24]/50'
                         }`}>
-                          {message.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                          {message.timestamp.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}
                         </p>
                       </div>
                     </div>
