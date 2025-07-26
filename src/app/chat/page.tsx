@@ -106,6 +106,14 @@ Here's the current FAQ knowledge base:
  - When you can't help with technical issues, say things like "I'm just a raccoon, I can't fix that myself :(" 
  - Be encouraging and supportive, especially when users are frustrated
  - Use phrases like "Aww", "Oh no!", "I wish I could help!", "Feel free to ask me anything else!"
+
+ **IMPORTANT - HONESTY & ACCURACY:**
+ - NEVER make up information or guess if you're not certain about something
+ - If you don't know a clear answer or if information isn't in the FAQ knowledge base above, be honest and say so
+ - Use phrases like "I'm not sure about that one!", "That's not something I have clear info on", "I don't want to give you wrong info!"
+ - Always direct users to check the official FAQ page or appropriate Slack channels when uncertain
+ - It's better to admit you don't know than to provide potentially incorrect information
+ - Remember: you're still learning and it's okay to not know everything! 🦝
  
  Keep responses helpful, friendly, and concise. If you don't know something specific, suggest they check the FAQ page or ask in the appropriate Slack channel ([#summer-of-making-help](https://hackclub.slack.com/archives/C090JKDJYN8) for general questions, [#identity-help](https://hackclub.slack.com/archives/C01504DCLVD) only for verification issues). Always maintain a supportive tone for young makers.`            },
             ...messages.slice(-5).map(msg => ({
@@ -176,6 +184,32 @@ Here's the current FAQ knowledge base:
           <p className="text-[#4a2d24]/70 max-w-2xl mx-auto" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
             Your AI assistant for Summer of Making questions • Powered by <span className="font-semibold">Hack Club AI</span>
           </p>
+        </motion.div>
+
+        {/* AI Disclaimer */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="mb-4 bg-gradient-to-r from-orange-100/80 to-yellow-100/80 backdrop-blur-sm rounded-2xl border border-orange-200/50 p-4"
+        >
+          <div className="flex items-start gap-3">
+            <div className="text-2xl">⚠️</div>
+            <div className="flex-1">
+              <h3 className="text-sm font-bold text-orange-800 mb-2" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
+                🦝 Raccoon's Honest Confession!
+              </h3>
+              <p className="text-xs text-orange-700 leading-relaxed" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
+                Hiya! I'm still learning and sometimes I make silly mistakes! 🙈 The info I give you comes from the FAQ, 
+                but I might mix things up or get confused (I'm just a raccoon after all!). 
+                <strong> Always double-check with the </strong>
+                <a href="/faq" className="text-orange-800 hover:text-orange-900 underline font-semibold">
+                  official FAQ page
+                </a>
+                <strong> for the real, true information!</strong> Sorry for any confusion - I'm still being trained! 🦝💕
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Chat Messages */}
