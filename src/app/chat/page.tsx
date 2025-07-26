@@ -146,16 +146,16 @@ export default function ChatPage() {
             <div className="text-2xl">⚠️</div>
             <div className="flex-1">
               <h3 className="text-sm font-bold text-orange-800 mb-2" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
-                🦝 Raccoon's Honest Confession!
+                🦝 Raccoon&apos;s Honest Confession!
               </h3>
               <p className="text-xs text-orange-700 leading-relaxed" style={{ fontFamily: 'Phantom Sans, sans-serif' }}>
-                Hiya! I'm still learning and sometimes I make silly mistakes! 🙈 The info I give you comes from the FAQ, 
-                but I might mix things up or get confused (I'm just a raccoon after all!). 
+                Hiya! I&apos;m still learning and sometimes I make silly mistakes! 🙈 The info I give you comes from the FAQ, 
+                but I might mix things up or get confused (I&apos;m just a raccoon after all!). 
                 <strong> Always double-check with the </strong>
                 <a href="/faq" className="text-orange-800 hover:text-orange-900 underline font-semibold">
                   official FAQ page
                 </a>
-                <strong> for the real, true information!</strong> Sorry for any confusion - I'm still being trained! 🦝💕
+                <strong> for the real, true information!</strong> Sorry for any confusion - I&apos;m still being trained! 🦝💕
               </p>
             </div>
           </div>
