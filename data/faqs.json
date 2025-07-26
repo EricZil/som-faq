@@ -195,6 +195,13 @@
       "category": "other",
       "staff": null,
       "reference": "https://hackclub.slack.com/docs/T0266FRGM/F090MQF0H2Q?focus_section_id=temp:C:WfT014681eb73d645d0b8ae5230b"
+    },
+    {
+      "question": "How long does it take for my project to be verified after re-shipping? (It got rejected)",
+      "answer": "Re-reviews don’t get priority, so it can take from a couple of days to 2-3 weeks, the same time as for normal ship certification!",
+      "category": "shipping",
+      "staff": "irtaza",
+      "reference": "https://hackclub.slack.com/archives/C090JKDJYN8/p1753540253906699?thread_ts=1753539000.736929&cid=C090JKDJYN8"
     }
   ]
 }
